@@ -6,7 +6,7 @@ import uuid
 
 from sheets import SheetsDataHandler
 
-ROOT_URL = "http://localhost:1234"
+ROOT_URL = st.secrets.root_url
 
 class CustomError(ValueError):
     pass
