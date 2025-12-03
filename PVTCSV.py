@@ -20,7 +20,6 @@ class CombinedDataTable:
         return ""
 
     def __init__(self, pvt: pd.DataFrame, survey: pd.DataFrame):
-        print(pvt)
         try:
             survey = survey[survey.index.str.startswith("FS_")]
         except:
