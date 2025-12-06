@@ -8,6 +8,10 @@ from sheets import SheetsDataHandler
 
 ROOT_URL = st.secrets.root_url
 
+st.set_page_config(
+    page_title="PVT Data Portal",
+)
+
 class CustomError(ValueError):
     pass
 
@@ -126,3 +130,7 @@ elif 'is_logged_in' in st.user.to_dict() and st.user.is_logged_in:
         st.write("Upload the files using the sidebar.")
 else:
     st.login()
+
+st.markdown('---')
+st.image('https://hairyex5000.github.io/PVTDataApp_Public/logo.jpg', width=150)
+st.markdown('*© Gonzaga University School of Engineering and Applied Science, 2025*')

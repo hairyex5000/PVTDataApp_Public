@@ -1,0 +1,7 @@
+[theme]
+primaryColor = "#06274f"
+backgroundColor = "#ffffff"
+font = "Figtree:https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+
+[theme.sidebar]
+backgroundColor = '#CEDBE8'
