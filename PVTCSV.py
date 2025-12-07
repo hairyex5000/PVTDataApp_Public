@@ -79,10 +79,10 @@ def from_file(pvtFileName = "pvt.csv", surveyFileName = "survey.csv", pvtType = 
 if 'logout' in st.query_params.to_dict() and st.query_params['logout'] == 'yes':
     st.logout()
 elif 'is_logged_in' in st.user.to_dict() and st.user.is_logged_in:
-    st.html(f'''
-    <a href='https://dev-l3hwkecdz1em3uww.us.auth0.com/oidc/logout?post_logout_redirect_uri={ROOT_URL}/?logout=yes' target='_top'><button>Log Out</button></a>
-    ''')
-    # st.page_link(page=f'https://dev-l3hwkecdz1em3uww.us.auth0.com/oidc/logout?post_logout_redirect_uri={ROOT_URL}/?logout=yes', label="Log Out")
+    # st.html(f'''
+    # <a href='https://dev-l3hwkecdz1em3uww.us.auth0.com/oidc/logout?post_logout_redirect_uri={ROOT_URL}/?logout=yes' target='_top'><button>Log Out</button></a>
+    # ''')
+    st.page_link(page=f'https://dev-l3hwkecdz1em3uww.us.auth0.com/oidc/logout?post_logout_redirect_uri={ROOT_URL}/?logout=yes', label="Log Out")
     st.sidebar.write("Upload Files")
     pvt_file = None
     if st.sidebar.radio("PVT Data Source", options=['File', 'Google Sheets']) == 'Google Sheets':
